@@ -11,9 +11,9 @@ use std::path::{Path, PathBuf};
     | true                     | true                                      | `add_globs` works as intended      |
 */
 /// Whether the root ignore file `test.ignore` should be passed to the IgnoreFilter constructor.
-const INCLUDE_ROOT_IGNORE_FILE: bool = true;
+const INCLUDE_ROOT_IGNORE_FILE: bool = false;
 /// Whether the `applies_in` param of `add_globs()` should be passed as `prefix(cwd)` or `cwd`.
-const USE_PREFIXED_PATH_AS_APPLIES_IN_PARAMETER: bool = true;
+const USE_PREFIXED_PATH_AS_APPLIES_IN_PARAMETER: bool = false;
 
 #[tokio::main]
 async fn main() {
